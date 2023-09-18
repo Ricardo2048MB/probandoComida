@@ -2,13 +2,22 @@ package libro.cap01;
 import java.util.Scanner;
 public class HolaMundoNombre {
     public static void main(String args[]) {
-        //esta clase permite leer datos por teclado
         Scanner scanner = new Scanner(System.in);
         //mensaje para el usuario
-        System.out.print("Escribe tu nombre: ");
-        //leemos un valor entero por teclado
-        String nom = scanner.nextLine();
-        //mostramos un mensaje y luego el valor leído
-        System.out.println("Hola mundo: " + nom);
+        System.out.print("Ingrese nombre, edad, y altura: ");
+        
+        //leemos el nombre
+        String nom = scanner.next();
+        
+        //leemos la edad
+        int edad = scanner.nextInt();
+        
+        //leemos la altura
+        double altura = scanner.nextDouble();
+        
+        //mostramos los datos por consola
+        System.out.println("Nombre: " + nom
+                                 +"Edad: " + edad
+                                 +"Altura: " + altura);
     }
 }
