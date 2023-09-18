@@ -17,7 +17,7 @@ public class HolaMundoNombre {
         
         //mostramos los datos por consola
         System.out.println("Nombre: " + nom
-                                 +"Edad: " + edad
-                                 +"Altura: " + altura);
+                                 +" Edad: " + edad
+                                 +" Altura: " + altura);
     }
 }
