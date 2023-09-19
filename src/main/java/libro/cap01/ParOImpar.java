@@ -21,12 +21,11 @@ public class ParOImpar {
         int v = scanner.nextInt();
         //obtenemos el resto de dividir v por dos (eso se hace para ver si es un múltiplo de dos duh)
         int resto = v % 2;
-        //para preguntar por igual se usa ==
-        if(resto == 0){
-            System.out.println(v + " es par");
-        }else{
-            System.out.println(v + " es impar");
-        }
+        //if in-line
+        String mssg = (resto == 0) ? " es par" : " es impar";
+        
+        //muestro resultado
+        System.out.println(v + " " + mssg);
     }
     
 }
