@@ -7,9 +7,9 @@ public class PrimerosNumeros {
         Scanner lector = new Scanner(System.in);
         int n = lector.nextInt();
         int i = 1;
-        while(i <= n){
+        do{
             System.out.println(i);
             i++;
-        }
+        }while(i <= n);
     }
 }
